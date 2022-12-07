@@ -149,9 +149,12 @@ color: var(--accent-color);
 /* стилізація конверту */
 .icon-envelope {
   margin-right: 10px;
-  fill: rgba(117, 117, 117, 1);
+  fill: var(--second-color-text);
   cursor: pointer;
  }
+ .icon-envelope:hover {
+  fill: var(--accent-color);
+   }
  .icon{
   display: flex;
     align-items: baseline;
@@ -166,6 +169,16 @@ color: var(--accent-color);
   color:var(--accent-color);
 }
 /* Сірий колір для телефону */
+
+.icon-smartphone {
+  margin-right: 10px;
+  fill: var(--second-color-text);
+  cursor: pointer;
+}
+.icon-smartphone:hover {
+  fill:var(--accent-color);
+}
+
 .tel {
   text-decoration: none;
   color: var(--second-color-text);
@@ -310,6 +323,9 @@ padding-bottom: 94px;
 
 /* Добавлення кольору фону для li */
  .list.team .item{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
   background-color:var(--first-background);
 }
 .team-img {
@@ -344,28 +360,27 @@ text-align: center;
 .team .social-item{
   width: 44px;
   height: 44px;
-background-color: yellow;
 margin-right: 10px;
-  
-}
-.team .social-icon {
-fill: #AFB1B8;
-}
-.social-link:hover .social-icon{
-  fill: var(--first-background);
-}
+  }
 
-.team .social-item:hover {
-  background-color: var(--accent-color);
-}
 .team .social-link{
   width: 100%;
   height: 100%;
-      display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-       }
+ display: flex;
+  align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+ color: #AFB1B8;
+    }
+      .team .social-link:hover {
+          background-color: var(--accent-color);
+        }
+.social-link:hover{
+   color: var(--first-background);
+             }
+   .team .social-icon {
+   fill: currentColor;
+   }
 .team .social-item:last-child{
 margin-right: 0;
 }
@@ -430,6 +445,49 @@ color: var(--footer-main-color-text);
   background-color: var( --footer-background-color);
 }
 
+
+  .text-social-link{
+margin-left: 70px;
+  }
+.address {
+  display: flex;
+  }
+    .text-soc-link {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--first-background);
+     
+    }
+.social-icons-footer{
+  display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-item-footer{
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  }
+.social-link-footer:hover{
+  background-color: var(--accent-color);
+}
+.social-link-footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--first-background);
+}
+.social-icon-footer{
+  fill: currentColor;
+}
 /* СТИЛІЗAЦІЯ ПОРТФОЛІО */
 /*  Стилізація студіо*/
 .studio {
@@ -521,6 +579,7 @@ color: var(--footer-main-color-text);
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
      }
 
  .flex-item {
