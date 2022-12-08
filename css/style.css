@@ -234,6 +234,7 @@ padding-left: 32px;
 padding-right: 32px;
 border-radius: 4px;
 margin-bottom: 200px;
+border: transparent;
 }
 
 /* ефект фокусу і ховера для кнопки в герої */
@@ -256,7 +257,8 @@ margin-bottom: 200px;
   display: flex;
     justify-content: center;
     align-items: center;
-   background-color: var(--background-color-team)
+   background-color: var(--background-color-team);
+  margin-bottom: 30px;
 }
 
 /* стилізація секції 3, особливості */
@@ -303,6 +305,7 @@ margin-bottom: 200px;
 /* стилізація секції наша команда */
 .centered {
   text-align: center;
+
 }
 .team-title {
   font-weight: 700;
@@ -316,9 +319,7 @@ margin-bottom: 200px;
         padding-bottom: 50px;
         padding-top: 94px;
       }
-    .list-const-client{
-      display: flex;
-        }
+   
         .list.team {
 display: flex;
 padding-bottom: 94px;
@@ -395,8 +396,23 @@ margin-right: 0;
     .team {
       background-color: var(--background-color-team);
     }
-    
-  .constant-clients-icon{
+ .clients-title{
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 50px;
+    padding-top: 94px;
+ }
+ .clients-list {
+   display: flex;
+   margin-bottom: 94px;
+ }
+  .clients-item{
        display: inline-flex;
          justify-content: center;
          align-items: center;
@@ -406,23 +422,24 @@ margin-right: 0;
          border: 1px solid #AFB1B8;
          margin-right: 30px;
          cursor: pointer;
+        color: #AFB1B8;
          }
-                 .constant-clients-icon:last-child{
-                  margin-right: 0;
-                 }
-   .constant-clients{
-                      margin-bottom: 94px;
-                 }
-        .icon-client {
-          fill: #AFB1B8;
-        }
-                .icon-client:hover {
-                  fill: var(--accent-color);
-                }
-.constant-clients-icon:hover .icon-client{
-  fill: var(--accent-color);
-}
-    /* стилізація "веб" чорним кольором */
+   .clients-item:last-child{
+     margin-right: 0;
+    }      
+    .clients-item:hover{
+      border: 1px solid var(--accent-color)
+    }
+      .clients-item:hover .icon-client {
+          fill: var(--accent-color);
+           }
+      .clients-link {
+        color: #AFB1B8;
+              }
+                   .icon-client{
+                  fill: currentColor;
+                                 }
+        /* стилізація "веб" чорним кольором */
     .span-footer {
       color: var(--first-background);
     }
@@ -606,9 +623,11 @@ margin-left: 70px;
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
      }
- .flex-item {
+         .flex-item:hover{
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+         }
+     .flex-item {
   flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
      } 
