@@ -158,8 +158,12 @@ color: var(--accent-color);
       margin-right: 10px;
       fill: currentColor;
       cursor: pointer;
+      vertical-align: middle;
      }
-   
+   .mail.nav{
+    align-items: center;
+      display: flex;
+   }
 /* налаштування фокусу і ховеру для мейл */
 .mail:hover,
 .mail:focus {
@@ -172,11 +176,16 @@ color: var(--accent-color);
   margin-right: 10px;
   fill: currentColor;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .tel {
   text-decoration: none;
   color: var(--second-color-text);
+}
+.tel.nav{
+  display: flex;
+    align-items: center;
 }
 /* Стилізація телефону-ефект ховеру і фокусу */
 .tel:hover,
@@ -379,12 +388,15 @@ margin-right: 10px;
  border-radius: 50%;
  color: #AFB1B8;
     }
-      .team .social-link:hover {
+      .team .social-link:hover,
+      .team .social-link:focus {
    background-color: var(--accent-color);
         }
-.social-link:hover{
+.social-link:hover,
+.social-link:focus{
    color: var(--first-background);
              }
+
    .team .social-icon {
    fill: currentColor;
    }
@@ -424,22 +436,32 @@ margin-right: 0;
          cursor: pointer;
         color: #AFB1B8;
          }
-   .clients-item:last-child{
+         .clients-item:last-child{
      margin-right: 0;
-    }      
-    .clients-item:hover{
-      border: 1px solid var(--accent-color)
+    }  
+      /* .clients-item:hover,
+            .clients-item:focus{
+      border: 1px solid var(--accent-color);
     }
-      .clients-item:hover .icon-client {
+      .clients-item:hover .icon-client,
+            .clients-item:focus .icon-client{
           fill: var(--accent-color);
-           }
-      .clients-link {
+           } */
+             .clients-link {
         color: #AFB1B8;
               }
-                   .icon-client{
+              .clients-link:hover,
+              .clients-link:focus{
+                color:  var(--accent-color);
+                }
+                              .clients-item:hover .clients-link,
+                          .clients-item:focus .clients-link{
+                            color: var(--accent-color);
+                      }
+                         .icon-client{
                   fill: currentColor;
                                  }
-        /* стилізація "веб" чорним кольором */
+          /* стилізація "веб" чорним кольором */
     .span-footer {
       color: var(--first-background);
     }
@@ -451,6 +473,11 @@ margin-right: 0;
 
 .container .footer {
   margin-right: 0;
+}
+/* вирівнювання футера */
+.container.footer{
+display: flex;
+  align-items: baseline;
 }
 .logo-link.footer {
    padding-top: 0;
@@ -495,9 +522,6 @@ color: var(--footer-main-color-text);
   .text-social-link{
 margin-left: 70px;
   }
-.address {
-  display: flex;
-  }
     .text-soc-link {
       font-weight: 700;
       font-size: 14px;
@@ -519,8 +543,14 @@ margin-left: 70px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   }
-.social-link-footer:hover{
+  
+.social-link-footer:hover,
+.social-link-footer:focus{
   background-color: var(--accent-color);
+}
+.social-link-footer:hover,
+.social-link-footer:focus{
+  fill: var(--accent-color);
 }
 .social-link-footer {
   width: 100%;
