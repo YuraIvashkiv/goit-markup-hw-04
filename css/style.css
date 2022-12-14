@@ -439,26 +439,7 @@ margin-right: 0;
          .clients-item:last-child{
      margin-right: 0;
     }  
-      /* .clients-item:hover,
-            .clients-item:focus{
-      border: 1px solid var(--accent-color);
-    }
-      .clients-item:hover .icon-client,
-            .clients-item:focus .icon-client{
-          fill: var(--accent-color);
-           } */
-             /* .clients-link {
-        color: #AFB1B8;
-              }
-              .clients-link:hover,
-              .clients-link:focus{
-                color:  var(--accent-color);
-                }
-            .clients-item:hover .clients-link,
-                          .clients-item:focus .clients-link{
-                            color: var(--accent-color);
-                      } */
-                      .clients-link{
+                           .clients-link{
                         display: flex;
                         align-items: center;
                         justify-content: center;
